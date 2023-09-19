@@ -13,7 +13,7 @@ const getPostMetadata = (): PostMetadata[] => {
     const folder = "posts/";
     const files = fs.readdirSync(folder);
     const markdownPosts = files.filter((file) => file.endsWith(".md"));
-    console.log(markdownPosts);
+
     // Get gray-matter data from each file.
     return markdownPosts.map((fileName) => {
         const fileContents = fs.readFileSync(`posts/${fileName}`, "utf8");
