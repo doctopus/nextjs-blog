@@ -1,10 +1,7 @@
 // import Image from 'next/image'
 // import { Inter } from '@next/font/google'
 // import styles from './page.module.css'
-// import fs from "fs";
-import Link from "next/link";
-// import matter from "gray-matter";
-// import {PostMetadata} from "@/app/components/PostMetadata";
+
 import getPostMetadata from "@/app/components/getPostMetadata";
 import PostPreview from "@/app/components/PostPreview";
 
