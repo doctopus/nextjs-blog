@@ -1,6 +1,8 @@
 import Link from "next/link";
 import "./globals.css";
 import Image from "next/image";
+import Navbar from "../components/Navbar/Navbar";
+
 export default function RootLayout({
   children,
 }: {
@@ -26,6 +28,7 @@ export default function RootLayout({
     )
     const hero = (
         <div className="flex flex-col justify-between max-w-xl px-4 mx-auto lg:pt-16 lg:flex-row md:px-8 lg:max-w-screen-xl">
+            <Navbar />
             <div className="pt-16 mb-16 lg:mb-0 lg:pt-32 lg:max-w-lg lg:pr-5">
                 <div className="max-w-xl mb-6">
                     <div>
